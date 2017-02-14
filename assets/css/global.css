@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+
+body{
+    background: #ddd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.light{
+    font-weight: 400;
+}
+.regular{
+    font-weight: 600;
+}
+.bold{
+    font-weight: 700;
+}
+
+.page_container{
+    padding: 2em;
+}
+.container_white{
+    background: #fff;
+    padding: 2em 5em;
+}
+
+.title{
+    margin-bottom: 40px;
+}
