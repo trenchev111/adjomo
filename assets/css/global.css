@@ -10,6 +10,11 @@ body{
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+a,
+a:hover{
+    color: #13D2FF;
+    text-decoration: none;
+}
 .light{
     font-weight: 400;
 }
@@ -26,6 +31,7 @@ body{
 .container_white{
     background: #fff;
     padding: 2em 5em;
+    min-height: 80vh;
 }
 
 .title{
@@ -44,14 +50,16 @@ body{
     border: 0;
     padding: 10px 30px;
 }
-input.form-control{
+input.form-control,
+select.form-control{
     background: #FBFBFB;
     background-color: #FBFBFB;
     outline: none;
     border-color: #F2F2F2;
     box-shadow: none;
 }
-input.form-control:focus{
+input.form-control:focus,
+select.form-control:focus{
     outline: none;
     box-shadow: none;
     border-color: #F2F2F2;
