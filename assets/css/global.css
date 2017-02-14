@@ -2,7 +2,7 @@
 
 
 body{
-    background: #ddd;
+    background: #01693D;
 }
 
 *{
@@ -10,6 +10,7 @@ body{
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
 .light{
     font-weight: 400;
 }
@@ -20,16 +21,75 @@ body{
     font-weight: 700;
 }
 
-.page_container{
-    padding: 2em;
-}
 .container_white{
     background: #fff;
     padding: 2em 5em;
 }
 
+
 .title{
     margin-bottom: 40px;
+}
+
+.navbar-inverse{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar li a{
+    padding: 5px 30px;
+    border: 1px solid #000;
+    margin-right: 40px;
+    margin-top: 7px;
+    border-radius: 30px;
+    color: #fff !important;
+}
+.ham-menu{
+    width: 35px;
+    display: block;
+    z-index: 2;
+    position: relative;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.ham-menu .line{
+    background: #fff;
+    width: 100%;
+    display: block;
+    margin-top: 3px;
+    height: 4px;
+    border-radius: 2px;
+}
+.first-section{
+    padding: 0;
+}
+.first-section .slide-menu{
+    width: 20vw;
+    height: 100vh;
+    background-color: #000;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.list-menu{
+    list-style: none;
+    text-align: center;
+    font-size: 30px;
+}
+.list-menu li{
+    margin: 20px;
+}
+.list-menu a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .btn-register,

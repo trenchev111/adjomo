@@ -10,7 +10,6 @@ $(function(){
         utilsScript: "assets/build/js/utils.js"
     });
 
-
     // get the country data from the plugin
     var countryData = $.fn.intlTelInput.getCountryData(),
     telInput = $("#phone"),
