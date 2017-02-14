@@ -3,19 +3,32 @@
 
 
 
-    mysql_close($conn);
+    $conn->close();
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sign Up</title>
-</head>
-<body>
-    
-    
+<?php
+    include_once("_Shared/header.html");
+?> 
 
-</body>
-</html>
+<h1>SIGN UP</h1>
+<form>
+    <div class="form-group">
+        <div class="form-group">
+            <label for="username">Password</label>
+            <input type="username" class="form-control" id="username" placeholder="Username">
+        </div>    
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>                     
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<?php
+    include_once("_Shared/footer.html");
+?> 
