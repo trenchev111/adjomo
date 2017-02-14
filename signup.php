@@ -33,8 +33,7 @@
             </div>
             <div class="form-group col-md-5 col-md-offset-1">
                 <label for="role">Country*</label>
-                <select name="country" id="country" required>
-                    <option value="spain">Spain</option>
+                <select name="country" id="country" class="form-control" required>
                 </select>
             </div>
             <div class="form-group col-md-5">
@@ -43,9 +42,14 @@
             </div>
             <div class="form-group col-md-5 col-md-offset-1">
                 <label for="email">Phone*</label>
-                <select name="country" id="country" required>
-                    <option value="spain">Spain</option>
-                </select>
+                <input type="tel" name="phone" id="phone" class="form-control" required>
+            </div>
+            <div class="form-group col-md-12">
+                <input type="checkbox" id="privacy-policy" required>
+                <label for="privacy-policy">I've read and accept the <a href="">Privacy Policy</a></label>
+            </div>
+            <div class="form-group col-md-12 text-center">
+                <button type="submit" name="submit" id="register" class="btn btn-primary btn-lg btn-register">Register</button>
             </div>
         </div>
     </form>

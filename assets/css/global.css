@@ -31,3 +31,21 @@ body{
 .title{
     margin-bottom: 40px;
 }
+
+.btn-register,
+.btn-register:focus,
+.btn-register:hover,
+.btn-register:active{
+    border-radius: 30px;
+    background: #13D2FF;
+    background-color: #13D2FF !important;
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    padding: 10px 30px;
+}
+input.form-control{
+    background: #FBFBFB;
+    background-color: #FBFBFB;
+    outline: none;
+}
