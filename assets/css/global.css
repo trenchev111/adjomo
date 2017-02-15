@@ -15,6 +15,15 @@ a:hover{
     color: #13D2FF;
     text-decoration: none;
 }
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.flex-column{
+    flex-direction: column;
+}
 .main-color{
     color: #13D2FF;
 }

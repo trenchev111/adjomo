@@ -1,8 +1,35 @@
 <?php
+    define('GUEST','testingphpmailer123@gmail.com');
+    define('GPWD','123123asdasd');
+    
     include_once("db.php");
 
     require_once "formvalidator.php";    
-    
+    require_once "PHPMailer/PHPMailerAutoload.php";
+
+    function smtpmailer($to, $from, $from_name, $subject, $body) { 
+        global $error;
+        $mail = new PHPMailer();  // create a new object
+        $mail->IsSMTP(); // enable SMTP
+        $mail->SMTPDebug = 0;  // debugging: 1 = errors and messages, 2 = messages only
+        $mail->SMTPAuth = true;  // authentication enabled
+        $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for GMail
+        $mail->Host = 'smtp.gmail.com';
+        $mail->Port = 465; 
+        $mail->Username = GUEST;  
+        $mail->Password = GPWD;           
+        $mail->SetFrom($from, $from_name);
+        $mail->Subject = $subject;
+        $mail->Body = $body;
+        $mail->AddAddress($to);
+        if(!$mail->Send()) {
+            $error = 'Mail error: '.$mail->ErrorInfo; 
+            return false;
+        } else {
+            $error = 'Message sent!';
+            return true;
+        }
+    }    
 
     function crypto_rand_secure($min, $max)
     {
@@ -53,17 +80,42 @@
             $company = $_POST['company'];
             $role = $_POST['role'];
             $phone = $_POST['phone'];
-            $token = getToken(127);
-            
+            $token = getToken(127);            
+
             $sql = "INSERT INTO users(fullname,email,company,role,phone,token) VALUES('$fullname','$email','$company','$role','$phone','$token')";
 
-            // if mail exists in db  
-            $query = "SELECT * FROM adjomo.users WHERE email = '$email'";
+            // if mail exists in db              
+            $sql_select = "SELECT email FROM users WHERE email='".$email."'";
+            $result = $conn->query($sql_select);
 
-            if ($conn->query($sql) === TRUE) {
-                header("Location: after_register.php");
+            if ($result->num_rows > 0) {
+                // output data of each row
+                echo "User already exists";
             } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
+                $conn->query($sql);
+
+                setcookie("fullname","$fullname",time() + 3600);
+                setcookie("email","$email",time() + 3600);
+
+                $act_link = $token;
+                $website = "http://localhost/";
+                $msg = 'Click on the <a href="http://localhost/adjomo/activate_account.php?token='.$act_link.'"/>activation link</a> to activate your account';
+                $subj = 'Activate your account';
+                $to = $email;
+                $from = 'contact@adjomo.com';
+                $name = 'Adjomo';
+                
+                if (smtpmailer($to, $from, $name, $subj, $msg)) {
+                    echo 'Yippie, message send via Gmail';
+                } else {
+                    if (!smtpmailer($to, $from, $name, $subj, $msg, false)) {
+                        if (!empty($error)) echo $error;
+                    } else {
+                        echo 'Yep, the message is send (after doing some hard work)';
+                    }
+                }
+
+                header("Location: after_register.php");
             }
 
             $show_form = false;                        
@@ -97,33 +149,33 @@
             <div class="row">
                 <div class="form-group col-md-5">
                     <label for="fullname">Fullname*</label>
-                    <input type="text" name="fullname" id="fullname" placeholder="Your fullname" class="form-control">
+                    <input type="text" name="fullname" id="fullname" placeholder="Your fullname" class="form-control" required>
                 </div>
                 <div class="form-group col-md-5 col-md-offset-1">
                     <label for="role">Role/Job position*</label>
-                    <input type="text" name="role" id="role" placeholder="Your role" class="form-control">
+                    <input type="text" name="role" id="role" placeholder="Your role" class="form-control" required>
                 </div>
                 <div class="form-group col-md-5">
                     <label for="company">Company Website*</label>
-                    <input type="text" name="company" id="company" placeholder="www.yourcompany.com" class="form-control">
+                    <input type="text" name="company" id="company" placeholder="www.yourcompany.com" class="form-control" required>
                 </div>
                 <div class="form-group col-md-5 col-md-offset-1">
                     <label for="role">Country*</label>
-                    <select name="country" id="country" class="form-control">
+                    <select name="country" id="country" class="form-control" required>
                     </select>
                 </div>
                 <div class="form-group col-md-5">
                     <label for="email">Email*</label>
-                    <input type="email" name="email" id="email" placeholder="youremail@yourcompany.com" class="form-control">
+                    <input type="email" name="email" id="email" placeholder="youremail@yourcompany.com" class="form-control" required>
                 </div>
                 <div class="form-group col-md-5 col-md-offset-1">
                     <label for="email">Phone*</label>
-                    <input type="tel" name="phone" id="phone" class="form-control">
+                    <input type="tel" name="phone" id="phone" class="form-control" required>
                 </div>
                 <div class="form-group col-md-12">
                     <!--<input type="checkbox" id="privacy-policy" required>-->
                     <div class="control">
-                        <input class="control__input" id="privacy" type="checkbox">
+                        <input class="control__input" id="privacy" type="checkbox" required>
                         <label class="control__label" for="privacy">I've read and accept the <a href="">Privacy Policy</a></label>
                     </div>
                     
