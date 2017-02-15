@@ -15,6 +15,13 @@ a:hover{
     color: #13D2FF;
     text-decoration: none;
 }
+.main-color{
+    color: #13D2FF;
+}
+.main-background-color{
+    background: #13D2FF;
+    background-color: #13D2FF;
+}
 .light{
     font-weight: 400;
 }
@@ -24,7 +31,9 @@ a:hover{
 .bold{
     font-weight: 700;
 }
-
+.image > img{
+    margin: 0 auto;
+}
 .container_white{
     background: #fff;
     padding: 2em 5em;
