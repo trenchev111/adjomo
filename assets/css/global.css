@@ -2,7 +2,7 @@
 
 
 body{
-    background: #01693D;
+    /*background: #01693D;*/
 }
 
 *{
@@ -21,8 +21,23 @@ a:hover{
     justify-content: center;
     flex-wrap: wrap;
 }
+.flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
 .flex-column{
     flex-direction: column;
+}
+.flex-vertical-center{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.stretch{
+    padding: 0 !important;
+    margin: 0 !important;
 }
 .main-color{
     color: #13D2FF;
@@ -46,14 +61,36 @@ a:hover{
 .container_white{
     background: #fff;
     padding: 2em 5em;
-    min-height: 80vh;
+    min-height: 70vh;
+    max-width: 50%;
+    margin: 0 auto;
 }
 
+.activate_account .container_white{
+    margin-top: 100px;
+}
+
+.icons_back{
+    min-height: 100vh;
+    height: auto;
+    background: #EAEDE6 url(../../assets/img/icons_back.png) no-repeat;
+    background-position: top center;
+}
 
 .title{
     margin-bottom: 40px;
 }
-
+/*
+    header
+*/
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: #183b40;
+}
 .navbar-inverse{
     background: none;
     border: none;
@@ -128,16 +165,26 @@ a:hover{
     padding: 10px 30px;
 }
 input.form-control,
-select.form-control{
+select.form-control,
+.tokenfield{
     background: #FBFBFB;
     background-color: #FBFBFB;
     outline: none;
     border-color: #F2F2F2;
     box-shadow: none;
 }
+.tt-dropdown-menu{
+    background: #EDEDED;
+}
 input.form-control:focus,
-select.form-control:focus{
+select.form-control:focus,
+.tokenfield.form-control:focus,
+.tokenfield.form-control.focus{
     outline: none;
     box-shadow: none;
     border-color: #F2F2F2;
+}
+.form-group.flex-vertical-center .control{
+    margin-right: 10px;
+    margin-top: 50px;
 }

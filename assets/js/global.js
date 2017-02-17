@@ -22,6 +22,7 @@ $(function(){
 
     $.each(countryData, function(i, country) {
         addressDropdown.append($("<option></option>").attr("value", country.iso2).text(country.name));
+        window.arr = country.name;
     });
 
     var initialCountry = telInput.intlTelInput("getSelectedCountryData").iso2;
@@ -33,5 +34,30 @@ $(function(){
 
     addressDropdown.change(function() {
         telInput.intlTelInput("setCountry", $(this).val());
+    });
+
+    // tags
+    var engine = new Bloodhound({
+        local: [{value: 'spain'}, {value: 'venezuela'}],
+        datumTokenizer: function(d) {
+            return Bloodhound.tokenizers.whitespace(d.value);
+        },
+        queryTokenizer: Bloodhound.tokenizers.whitespace        
+    });    
+
+    engine.initialize();
+
+    $('#top_verticals').tokenfield({
+        typeahead: [null, { 
+            source: engine.ttAdapter() 
+        }]
+    });
+
+    // owl 
+    $('.owl').owlCarousel({
+        items: 1,
+        nav: false,
+        dots: true,
+        singleItem: true
     });
 })

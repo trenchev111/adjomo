@@ -138,8 +138,8 @@
 <?php
     include_once("_Shared/header.html");
 ?> 
-<p class="text-center">Already an ADJOMO publisher? <a href="login.php">Sign in here</a></p>
-<section class="page_container container">
+<section class="container-fluid icons_back stretch flex-center flex-column">        
+    <p class="text-center">Already an ADJOMO publisher? <a href="login.php">Sign in here</a></p>
     <div class="container_white">
         <section class="title col-md-12">
             <h1 class="text-center bold">Become a Publisher</h1>
