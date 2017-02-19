@@ -10,6 +10,10 @@ $(function(){
         utilsScript: "assets/build/js/utils.js"
     });
 
+    $('.ham-menu').click(function(){
+        $('.slide-menu').toggle("slow");
+    })
+
     // get the country data from the plugin
     var countryData = $.fn.intlTelInput.getCountryData(),
     telInput = $("#phone"),

@@ -67,7 +67,7 @@
         //Setup Validations
         $validator = new FormValidator();
         $validator->addValidation("fullname","req","Please fill in Name");
-        $validator->addValidation("email","email","The input for Email should be a valid email value");
+        // $validator->addValidation("email","email","The input for Email should be a valid email value");
         $validator->addValidation("email","req","Please fill in Email");
         $validator->addValidation("company","req","Please fill in company website");
         $validator->addValidation("role","req","Please fill in role");

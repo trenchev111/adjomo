@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
-
-body{
-    background: #01693D;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -59,17 +54,22 @@ a:hover{
     border: none;
     padding: 0;
     margin: 0;
+    position: fixed;
+    top: 0;
+}
+.navbar .container-fluid{
+    padding-top: 20px;
 }
 .navbar li a{
     padding: 5px 30px;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     margin-right: 40px;
     margin-top: 7px;
     border-radius: 30px;
     color: #fff !important;
 }
 .ham-menu{
-    width: 35px;
+    width: 40px;
     display: block;
     z-index: 2;
     position: relative;
@@ -82,16 +82,25 @@ a:hover{
     background: #fff;
     width: 100%;
     display: block;
-    margin-top: 3px;
-    height: 4px;
+    margin-top: 6px;
+    height: 2px;
     border-radius: 2px;
 }
 .first-section{
     padding: 0;
+    background: url("../img/first-section.png") no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+     height: 100vh;
+}
+.first-section h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 10%;
 }
 .first-section .slide-menu{
-    width: 20vw;
-    height: 100vh;
     background-color: #000;
     z-index: 1;
     position: absolute;
@@ -102,10 +111,39 @@ a:hover{
     justify-content: center;
     display: none;
 }
+.call-to-action-buttons{
+    position: absolute;
+    bottom: 20px;
+    left: 41%;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.call-to-action-buttons .fa{
+    padding: 14px 15px 10px 10px;
+    color: #fff;
+    font-size: 25px;
+}
+.first-section .btn-default{
+    background: #14d2ff;
+    border: none;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 20px;
+    margin: 70px 0;
+    border: 1px solid #14d2ff;
+}
+.btn-default:hover{
+    border: 1px solid #fff;
+    background: none;
+    color: #14d2ff;
+}
+
 .list-menu{
     list-style: none;
-    text-align: center;
     font-size: 30px;
+    margin-top: 60px;
 }
 .list-menu li{
     margin: 20px;
@@ -114,7 +152,33 @@ a:hover{
     text-decoration: none;
     color: #fff;
 }
+.active{
+    color: #14d2ff;
+    border-left: 2px solid #14d2ff;
+}
 
+.second-section .carousel-slider-phone img{
+    margin-top: -30%;
+    margin-left: 26%;
+    width: 35%;
+}
+.first-column{
+   margin-left: 18%;
+   margin-right: 18%;
+   margin-top: -5%;
+   background-color: #fff;
+}
+.first-column h1{
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.first-column h2{
+    color: #fff;
+    margin-left: 13%;
+    font-weight: bold;
+    font-size: 57px;
+}
 .btn-register,
 .btn-register:focus,
 .btn-register:hover,
