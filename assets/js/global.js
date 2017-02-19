@@ -52,12 +52,26 @@ $(function(){
             source: engine.ttAdapter() 
         }]
     });
+    
+    // sw
+    $('#smartWizard').smartWizard({        
+        showStepURLhash: false,
+        theme: "dots",
+        showPreviousButton: false
+    });
 
-    // owl 
-    $('.owl').owlCarousel({
-        items: 1,
-        nav: false,
-        dots: true,
-        singleItem: true
+    var nav = $('#smartWizard ul.nav');
+    nav.detach();
+    nav.insertBefore($('#smartWizard nav.navbar'));
+
+    $("#smartWizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
+        console.log("You are on step "+stepNumber+" now");
+        if(stepNumber < 1){
+            $('.sw-btn-prev').hide();
+            $('.sw-btn-next').text('Next').removeClass('btn-register');
+        }else{
+            $('.sw-btn-prev').show().text('Skip this').addClass('btn-skip');
+            $('.sw-btn-next').text('Register').addClass('btn-register').removeClass('disabled');
+        }
     });
 })
