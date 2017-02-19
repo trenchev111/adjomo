@@ -16,8 +16,23 @@ a:hover{
     justify-content: center;
     flex-wrap: wrap;
 }
+.flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
 .flex-column{
     flex-direction: column;
+}
+.flex-vertical-center{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.stretch{
+    padding: 0 !important;
+    margin: 0 !important;
 }
 .main-color{
     color: #13D2FF;
@@ -41,14 +56,36 @@ a:hover{
 .container_white{
     background: #fff;
     padding: 2em 5em;
-    min-height: 80vh;
+    min-height: 70vh;
+    max-width: 50%;
+    margin: 0 auto;
 }
 
+.activate_account .container_white{
+    margin-top: 100px;
+}
+
+.icons_back{
+    min-height: 100vh;
+    height: auto;
+    background: #EAEDE6 url(../../assets/img/icons_back.png) no-repeat;
+    background-position: top center;
+}
 
 .title{
     margin-bottom: 40px;
 }
-
+/*
+    header
+*/
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: #183b40;
+}
 .navbar-inverse{
     background: none;
     border: none;
@@ -182,7 +219,15 @@ a:hover{
 .btn-register,
 .btn-register:focus,
 .btn-register:hover,
-.btn-register:active{
+.btn-register:active,
+.btn-login,
+.btn-login:focus,
+.btn-login:hover,
+.btn-login:active,
+.sw-btn-next,
+.sw-btn-next:hover,
+.sw-btn-next:focus,
+.sw-btn-next:active{
     border-radius: 30px;
     background: #13D2FF;
     background-color: #13D2FF !important;
@@ -190,18 +235,95 @@ a:hover{
     box-shadow: none;
     border: 0;
     padding: 10px 30px;
+    color: #fff;
+}
+.sw-btn-prev,
+.sw-btn-prev:hover,
+.sw-btn-prev:focus{
+    background-color: transparent !important;
+    background: transparent;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #13D2FF;
+    padding: 10px 30px;
+    color: #13D2FF;
+    margin-right: 30px;
+}
+.sw-btn-next,
+.sw-btn-prev{
+    border-radius: 30px !important;
+}
+.sw-btn-group{
+    float: none !important;
+    margin: 0 auto;
 }
 input.form-control,
-select.form-control{
+select.form-control,
+.tokenfield{
     background: #FBFBFB;
     background-color: #FBFBFB;
     outline: none;
     border-color: #F2F2F2;
     box-shadow: none;
 }
+.tt-dropdown-menu{
+    background: #EDEDED;
+}
 input.form-control:focus,
-select.form-control:focus{
+select.form-control:focus,
+.tokenfield.form-control:focus,
+.tokenfield.form-control.focus{
     outline: none;
     box-shadow: none;
     border-color: #F2F2F2;
+}
+.form-group.flex-vertical-center .control{
+    margin-right: 10px;
+    margin-top: 50px;
+}
+.form-group.networks.flex-vertical-center .control,
+.form-group.logged.flex-vertical-center .control{
+    margin-top: 0;
+}
+.sw-btn-prev{
+    display: none;
+}
+.sw-btn-next,
+.sw-btn-prev{
+    float: none !important;
+}
+.sw-theme-dots .sw-toolbar-bottom{
+    border: 0;
+    text-align: center;
+}
+.sw-theme-dots > ul.step-anchor:before{
+    display: none;
+}
+.sw-theme-dots > ul.step-anchor{
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+}
+.sw-theme-dots > ul.step-anchor > li > a:after{
+    display: none;
+}
+
+/* formbase override */
+.control__label::before{
+    background: #FBFBFB;
+    border-color: #F2F2F2;
+}
+
+@media screen and (max-width: 768px){
+    .container_white{
+        max-width: 100%;
+    }
+    .flex-vertical-center{
+        width: 100%;
+    }
+    .networks{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
