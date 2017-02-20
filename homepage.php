@@ -54,10 +54,10 @@
 				<h2>Smart Click Optimization</h2>
 				<div class="row">
 					<div class="col-md-6 col-sm-6 col-xs-12">
-
+						<img src="" alt="">
 					</div>
 					<div class="col-md-6 col-sm-6 col-xs-12">
-
+						
 					</div>
 				</div>
 			</div>
