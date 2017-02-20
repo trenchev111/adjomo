@@ -5,6 +5,9 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+body{
+    background: #F0F0F0;
+}
 a,
 a:hover{
     color: #13D2FF;
@@ -203,7 +206,6 @@ header{
    margin-left: 18%;
    margin-right: 18%;
    margin-top: -5%;
-   background-color: #fff;
 }
 .first-column h1{
     text-align: center;
@@ -215,6 +217,29 @@ header{
     margin-left: 13%;
     font-weight: bold;
     font-size: 57px;
+}
+.second-column{
+   
+}
+.action-text{
+     margin-left: 18%;
+   margin-right: 18%;
+}
+.second-column h1{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.second-column .mac-img-right{
+    width: 51%;
+    margin-top: -5%;
+    position: relative;
+    right: 0;
+}
+.second-column .iphone-right-img-right{
+    position: absolute;
+    right: 0;
+    margin-top: 3%;
+    width: 20%;
 }
 .btn-register,
 .btn-register:focus,
