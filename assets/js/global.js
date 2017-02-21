@@ -78,4 +78,16 @@ $(function(){
             $('.sw-btn-next').text('Register').addClass('btn-register').removeClass('disabled');
         }
     });
+
+
+    // open close menu
+    var slideOpen = 1;
+    $('.hamburger').click(function(){          
+        $(this).toggleClass('is-active');
+        $('.menu ul').toggleClass('show slideInRight');
+    })
+
+    // push section-1 as header height
+    var hh = $('header').height();
+    $('.section-1').css('margin-top',hh);
 })
