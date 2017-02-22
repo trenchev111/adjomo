@@ -105,3 +105,133 @@ header.header .menu ul li a.active:before{
     left: 45%;
     transform: translate(-45%);
 }
+
+/* section 2 */
+.section-2{
+    max-width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;    
+}
+.section-2 h1.counter{
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;  
+    overflow: hidden;
+    position: relative;
+    padding-left: 12.5%;
+}
+.section-2 h1.counter:before{
+    content: '';
+    height: 2px;
+    background: #666666;
+    width: 98%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+.section-2 h1.counter:after{
+    content: '';
+    position: absolute;
+    width: 5%;
+    transform: rotate(-45deg);
+    height: 2px;
+    background: #666666;
+    right: -3px;
+    bottom: 0;    
+}
+.section-2 h1.counter span.number{
+    position: absolute;
+    right: 20px;
+    bottom: -30px;
+    color: #e4e4e4;
+}
+.section-2 h1.monetize{
+    text-align: right;
+}
+.section-2 h1.monetize{
+    position: relative;
+    overflow: hidden;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+.section-2 h1.monetize:before{
+    content: '';
+    height: 2px;
+    background: #666666;
+    width: 15%;
+    right: 2%;
+    bottom: 0;
+    position: absolute;
+}
+.section-2 h1.monetize:after{
+    content: '';
+    position: absolute;
+    width: 5%;
+    transform: rotate(-45deg);
+    height: 2px;
+    background: #666666;
+    right: -3px;
+    bottom: 0; 
+}
+.section-2 .monetize-content{
+    max-width: 30%;
+    float: right;
+}
+/* section-3 */
+.section-3{
+    background: url('../../assets/img/image004.png') no-repeat right;
+    background-position: right 95px;
+    min-height: 100vh;
+}
+.section-3 > .col-md-12{
+    max-width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;    
+    float: none;
+}
+.section-3 h1.easy-to-use{
+    font-weight: bold;
+    color: #fff;  
+    overflow: hidden;
+    position: relative;
+    font-size: 70px;
+    min-height: 70px;
+}
+.section-3 h1.easy-to-use span.number{
+    position: absolute;
+    bottom: -30px;
+    left: 15px;
+    color: #e4e4e4;
+}
+.section-3 h1.easy-to-use:before,
+.section-3 h1.platform:before{
+    content: '';
+    height: 2px;
+    background: #666666;
+    width: 100%;
+    left: 2%;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+.section-3 h1.easy-to-use:after,
+.section-3 h1.platform:after{
+    content: '';
+    position: absolute;
+    width: 5%;
+    transform: rotate(45deg);
+    height: 2px;
+    background: #666666;
+    left: -3px;
+    bottom: 0; 
+}
+.section-3 h1.platform:before{
+    width: 10%;    
+}
+.section-3 h1.platform{
+    position: relative;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}

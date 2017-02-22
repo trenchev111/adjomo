@@ -64,7 +64,39 @@
 				<div class="col-md-12">
 					<h1 class="title">Monetize your traffic with local advertisers.</h1>
 					<img src="assets/img/image003.png" alt="" class="img-responsive hand">
-				</div>
+				</div>				
+			</div>
+		</section>
+		<section class="section-2 container-fluid">
+			<div class="col-md-12">
+				<h1 class="counter">
+					100%
+					<span class="number">01</span>
+				</h1>
+				<h1 class="monetize">
+					Monetize your Mobile <span>traffic</span>
+				</h1>
+				<p class="monetize-content">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+					laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+			</div>
+		</section>
+		<section class="section-3 container-fluid">
+			<div class="col-md-12">
+				<h1 class="easy-to-use">				
+					<span class="number">02</span>
+				</h1>
+				<h1 class="platform">
+					Easy to use platform
+				</h1>
+				<p class="easy-content">
+					Manage your offer subscription <br/>
+					and monitor the campaign activity <br/>
+					clicks, conversions, revenue
+				</p>
 			</div>
 		</section>
 	</main>
