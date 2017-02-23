@@ -21,6 +21,9 @@
 	<link rel="stylesheet" href="assets/css/homepage.css">
 	<link rel="stylesheet" href="assets/css/hamburger.css">
 
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+
     <link rel="stylesheet" href="assets/css/global.css">
 
 
@@ -158,8 +161,112 @@
 		</section>
 		<section class="section-6 container-fluid">
 			<h1 class="text-center title">What's going on</h1>
-			<div class="slider">
-
+			<div id="frame" class="frame">
+				<li>
+					<img src="assets/img/city.jpg" alt="" class="img-responsive">
+					<div class="content clearfix">
+						<h4 class="title">
+							Affiliate World Asia 2016
+						</h4>
+						<p>
+							5-6 December 2016 <br/>
+							Bangkok, Thailand
+						</p>
+						<div class="social">
+							<div class="tweet pull-left">
+								<i class="fa fa-twitter fa-3x"></i>
+							</div>
+							<div class="like-comment pull-right">
+								<i class="fa fa-thumbs-up fa-2x"></i>
+								<i class="fa fa-comment fa-2x"></i>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img src="assets/img/city.jpg" alt="" class="img-responsive">
+					<div class="content clearfix">
+						<h4 class="title">
+							Affiliate World Asia 2016
+						</h4>
+						<p>
+							5-6 December 2016 <br/>
+							Bangkok, Thailand
+						</p>
+						<div class="social">
+							<div class="tweet pull-left">
+								<i class="fa fa-twitter fa-3x"></i>
+							</div>
+							<div class="like-comment pull-right">
+								<i class="fa fa-thumbs-up fa-2x"></i>
+								<i class="fa fa-comment fa-2x"></i>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img src="assets/img/city.jpg" alt="" class="img-responsive">
+					<div class="content clearfix">
+						<h4 class="title">
+							Affiliate World Asia 2016
+						</h4>
+						<p>
+							5-6 December 2016 <br/>
+							Bangkok, Thailand
+						</p>
+						<div class="social">
+							<div class="tweet pull-left">
+								<i class="fa fa-twitter fa-3x"></i>
+							</div>
+							<div class="like-comment pull-right">
+								<i class="fa fa-thumbs-up fa-2x"></i>
+								<i class="fa fa-comment fa-2x"></i>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img src="assets/img/city.jpg" alt="" class="img-responsive">
+					<div class="content clearfix">
+						<h4 class="title">
+							Affiliate World Asia 2016
+						</h4>
+						<p>
+							5-6 December 2016 <br/>
+							Bangkok, Thailand
+						</p>
+						<div class="social">
+							<div class="tweet pull-left">
+								<i class="fa fa-twitter fa-3x"></i>
+							</div>
+							<div class="like-comment pull-right">
+								<i class="fa fa-thumbs-up fa-2x"></i>
+								<i class="fa fa-comment fa-2x"></i>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img src="assets/img/city.jpg" alt="" class="img-responsive">
+					<div class="content clearfix">
+						<h4 class="title">
+							Affiliate World Asia 2016
+						</h4>
+						<p>
+							5-6 December 2016 <br/>
+							Bangkok, Thailand
+						</p>
+						<div class="social">
+							<div class="tweet pull-left">
+								<i class="fa fa-twitter fa-3x"></i>
+							</div>
+							<div class="like-comment pull-right">
+								<i class="fa fa-thumbs-up fa-2x"></i>
+								<i class="fa fa-comment fa-2x"></i>
+							</div>
+						</div>
+					</div>
+				</li>
 			</div>
 		</section>
 	</main>
@@ -176,6 +283,8 @@
     <script src="assets/js/bootstrap-tokenfield.min.js"></script>
 
     <script src="smartWizard/js/jquery.smartWizard.min.js"></script>
+
+	<script src="slick/slick.js"></script>
 
     <script src="assets/js/global.js"></script>
 

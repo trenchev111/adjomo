@@ -95,4 +95,11 @@ $(function(){
     $('.section-5 .dropdown li a').click(function(){
         $('.section-5 .dropdown-toggle').html($(this).text() + "<span class='caret'></span>");
     })
+
+    // slideeee
+    $('.frame').slick({
+        centerMode: true,
+        centerPadding: '20px',
+        slidesToShow: 3,
+    })
 })
