@@ -98,6 +98,69 @@
 					clicks, conversions, revenue
 				</p>
 			</div>
+			<img src="assets/img/iphone-right.png" alt="" class="img-responsive absolute-right">
+		</section>
+		<section class="section-4 container-fluid">
+			<div class="col-md-12">
+				<h1 class="smart-click">
+					<span class="number">03</span>
+				</h1>
+				<h1 class="optimization">
+					Smart Click Optimization
+				</h1>
+			</div>
+			<div class="col-md-6 block">
+				<img src="assets/img/3rd-column-icons.png" alt="" class="img-responsive">
+			</div>
+			<div class="col-md-6 block">
+				<p>
+					Our SmartCO solution will lead to your sky performance! 
+					We will make sure to monetize 100% of your Mobile/Desktop traffic in all verticals.
+				</p>
+				<p>					
+					Our algorithm assures the best possible results through its advanced traffic filtering, segmentation and data points analysis in real time. 
+					<br/> Do no waste more of your traffic, choose your vertical, grab your link and increase your revenue with us!
+				</p>
+			</div>
+		</section>
+		<section class="section-5 container-fluid">
+			<div class="col-md-12">
+				<h1 class="text-center">Get in touch</h1>
+				<div class="col-md-12 flex-center">
+					<h2>
+						You are a 										
+					</h2>
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Publisher
+						<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a>Publisher</a></li>
+							<li><a>Advertiser</a></li>
+							<li><a>Other</a></li>
+						</ul>
+					</div>
+				</div>
+				<form action="" method="post">
+					<div class="form-group col-md-6">
+						<input type="text" class="form-control" placeholder="Your fullname">
+					</div>
+					<div class="form-group col-md-6">
+						<input type="email" class="form-control" placeholder="Your email">
+					</div>
+					<div class="form-group col-md-12">
+						<textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Your message"></textarea>
+					</div>
+					<div class="form-group col-md-12 text-center">
+						<button type="submit" class="btn btn-default send">Send</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="section-6 container-fluid">
+			<h1 class="text-center title">What's going on</h1>
+			<div class="slider">
+
+			</div>
 		</section>
 	</main>
 

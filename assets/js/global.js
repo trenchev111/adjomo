@@ -90,4 +90,9 @@ $(function(){
     // push section-1 as header height
     var hh = $('header').height();
     $('.section-1').css('margin-top',hh);
+
+    // select from ddown
+    $('.section-5 .dropdown li a').click(function(){
+        $('.section-5 .dropdown-toggle').html($(this).text() + "<span class='caret'></span>");
+    })
 })
