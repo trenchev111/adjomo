@@ -65,8 +65,40 @@
 		<section class="section-1 container-fluid">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="title">Monetize your traffic with local advertisers.</h1>
+					<h1 class="title">Monetize your traffic with local advertisers.</h1>				
+					<!--<map name="Map" id="Map">
+						<area alt="" title="" href="#" shape="poly" coords="177,97,438,94,438,634,181,632" />	-->										
+					<!--</map>-->
 					<img src="assets/img/image003.png" alt="" class="img-responsive hand">
+					<div class="phone">			
+						<div class="buttons">
+							<div class="location">
+								<i class="fa fa-location-arrow fa-2x"></i>	
+							</div>	
+							<div class="become-publisher">
+								<a href="" class="btn btn-primary">Become a Publisher</a>
+							</div>
+							<div class="arrow-down">
+								<img src="assets/img/down-arrow.png" alt="">
+							</div>
+						</div>			
+						<div class="phone-slider">
+							<ul>
+								<li style="background: url('assets/img/mobile_screens_1.png') no-repeat center; background-size: cover;">
+									
+								</li>
+								<li style="background: url('assets/img/mobile_screens_2.png') no-repeat center; background-size: cover;">
+									
+								</li>
+								<li style="background: url('assets/img/mobile_screens_3.png') no-repeat center; background-size: cover;">
+									
+								</li>
+								<li style="background: url('assets/img/mobile_screens_4.png') no-repeat center; background-size: cover;">
+									
+								</li>
+							</ul>
+						</div>	
+					</div>
 				</div>				
 			</div>
 		</section>
@@ -269,6 +301,33 @@
 				</li>
 			</div>
 		</section>
+		<section class="section-7 container-fluid">
+			<div class="col-md-12">
+				<p class="stay-tuned">
+					Stay Tuned follow us on
+				</p>	
+				<ul>
+					<li>
+						<a href="">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</li>					
+				</ul>
+				<p class="copyright">
+					2017 &copy; ADJOMO
+				</p>
+			</div>	
+		</section>		
 	</main>
 
     

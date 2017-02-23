@@ -17,7 +17,54 @@
     left: 45%;
     transform: translate(-45%);
 }
-
+.section-1 .phone{
+    overflow: hidden;
+    max-width: 210px;
+    margin: 0 auto;
+    position: relative;
+    left: -22px;
+    max-height: 380px;    
+    top: 120px;
+}
+.section-1 .phone li{
+    min-height: 500px;
+}
+.section-1 .phone .buttons{
+    position: absolute;
+    z-index: 1;
+    height: 90%;
+    width: 100%;
+    top: 5%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section-1 .phone .buttons .location{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+}
+.section-1 .phone .buttons .become-publisher a{
+    width: 100%;
+    border-radius: 25px;
+    background: #14d2ff;
+    padding: 10px 30px;
+    border: 1px solid #14d2ff;
+}
+.section-1 .phone .buttons .become-publisher a:focus,
+.section-1 .phone .buttons .become-publisher a:hover,
+.section-1 .phone .buttons .become-publisher a:active{
+    outline: none;
+    box-shadow: none;    
+}
 /* section 2 */
 .section-2{
     max-width: 50%;
@@ -366,4 +413,38 @@
 .section-6 .slick-next:hover{
     background: transparent url('../../assets/img/arrow-right.png') no-repeat center;
     background-size: contain;
+}
+/* section 7 */
+.section-7{
+    padding-bottom: 100px;
+}
+.section-7 > .col-md-12{
+    max-width: 20%;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+}
+.section-7 ul {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 50px;
+}
+.section-7 ul li {
+    display: inline-block;
+    margin: 0 5px;    
+}
+.section-7 ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+.section-7 ul li a i {
+    color: #999999;
 }

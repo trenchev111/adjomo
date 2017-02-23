@@ -102,4 +102,12 @@ $(function(){
         centerPadding: '20px',
         slidesToShow: 3,
     })
+    
+
+    // phone slider
+    $('.phone-slider ul').slick({
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 2000
+    })
 })
