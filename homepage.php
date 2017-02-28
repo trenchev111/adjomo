@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="assets/css/global.css">
 
 
-    <title>Sign Up</title>
+    <title>Home</title>
 </head>
 <body>
 
@@ -44,65 +44,68 @@
 			</div>
 			<ul class="animated">
 				<li>
-					<a href="" class="active">Start</a>	
+					<a class="active" section="section1">Start</a>	
 				</li>	
 				<li>
-					<a href="">Publishers</a>
+					<a section="section2">Publishers</a>
 				</li>
 				<li>
-					<a href="">Advertisers</a>
+					<a section="section3">Advertisers</a>
 				</li>
 				<li>
-					<a href="">SmartCO</a>
+					<a section="section4">SmartCO</a>
 				</li>
 				<li>
-					<a href="">Contact</a>
+					<a section="section5">Contact</a>
 				</li>
 			</ul>			
 		</nav>
 	</header>
 	<main>
-		<section class="section-1 container-fluid">
+		<section class="section-1 container-fluid" scroll="section1">
 			<div class="row">
 				<div class="col-md-12">
 					<h1 class="title">Monetize your traffic with local advertisers.</h1>				
-					<!--<map name="Map" id="Map">
-						<area alt="" title="" href="#" shape="poly" coords="177,97,438,94,438,634,181,632" />	-->										
-					<!--</map>-->
-					<img src="assets/img/image003.png" alt="" class="img-responsive hand">
-					<div class="phone">			
-						<div class="buttons">
-							<div class="location">
-								<i class="fa fa-location-arrow fa-2x"></i>	
+					<map name="Map" id="Map">
+						<area alt="" title="" href="#" shape="poly" coords="182,124,433,123,433,612,185,611" id="area"/>									
+					</map>
+					<div class="image-phone col-md-12">
+						<img src="assets/img/image003.png" alt="" class="img-responsive hand" useMap="#Map" id="hand">
+
+						<div class="phone">
+							<div class="buttons">
+								<div class="location">
+									<i class="fa fa-location-arrow fa-2x"></i>	
+								</div>	
+								<div class="become-publisher">
+									<a href="" class="btn btn-primary">Become a Publisher</a>
+								</div>
+								<div class="arrow-down">
+									<img src="assets/img/down-arrow.png" alt="">
+								</div>
+							</div>			
+							<div class="phone-slider">
+								<ul>
+									<li style="background: url('assets/img/mobile_screens_1.png') no-repeat center; background-size: cover;">
+										
+									</li>
+									<li style="background: url('assets/img/mobile_screens_2.png') no-repeat center; background-size: cover;">
+										
+									</li>
+									<li style="background: url('assets/img/mobile_screens_3.png') no-repeat center; background-size: cover;">
+										
+									</li>
+									<li style="background: url('assets/img/mobile_screens_4.png') no-repeat center; background-size: cover;">
+										
+									</li>
+								</ul>
 							</div>	
-							<div class="become-publisher">
-								<a href="" class="btn btn-primary">Become a Publisher</a>
-							</div>
-							<div class="arrow-down">
-								<img src="assets/img/down-arrow.png" alt="">
-							</div>
-						</div>			
-						<div class="phone-slider">
-							<ul>
-								<li style="background: url('assets/img/mobile_screens_1.png') no-repeat center; background-size: cover;">
-									
-								</li>
-								<li style="background: url('assets/img/mobile_screens_2.png') no-repeat center; background-size: cover;">
-									
-								</li>
-								<li style="background: url('assets/img/mobile_screens_3.png') no-repeat center; background-size: cover;">
-									
-								</li>
-								<li style="background: url('assets/img/mobile_screens_4.png') no-repeat center; background-size: cover;">
-									
-								</li>
-							</ul>
-						</div>	
-					</div>
+						</div>
+					</div>					
 				</div>				
 			</div>
 		</section>
-		<section class="section-2 container-fluid">
+		<section class="section-2 container-fluid" scroll="section2">
 			<div class="col-md-12">
 				<h1 class="counter">
 					100%
@@ -119,7 +122,7 @@
 				</p>
 			</div>
 		</section>
-		<section class="section-3 container-fluid">
+		<section class="section-3 container-fluid" scroll="section3">
 			<div class="col-md-12">
 				<h1 class="easy-to-use">				
 					<span class="number">02</span>
@@ -135,7 +138,7 @@
 			</div>
 			<img src="assets/img/iphone-right.png" alt="" class="img-responsive absolute-right">
 		</section>
-		<section class="section-4 container-fluid">
+		<section class="section-4 container-fluid" scroll="section4">
 			<div class="col-md-12">
 				<h1 class="smart-click">
 					<span class="number">03</span>
@@ -158,7 +161,7 @@
 				</p>
 			</div>
 		</section>
-		<section class="section-5 container-fluid">
+		<section class="section-5 container-fluid" scroll="section5">
 			<div class="col-md-12">
 				<h1 class="text-center">Get in touch</h1>
 				<div class="col-md-12 flex-center">
@@ -191,7 +194,7 @@
 				</form>
 			</div>
 		</section>
-		<section class="section-6 container-fluid">
+		<section class="section-6 container-fluid" scroll="section6">
 			<h1 class="text-center title">What's going on</h1>
 			<div id="frame" class="frame">
 				<li>
@@ -301,7 +304,7 @@
 				</li>
 			</div>
 		</section>
-		<section class="section-7 container-fluid">
+		<section class="section-7 container-fluid" scroll="section7">
 			<div class="col-md-12">
 				<p class="stay-tuned">
 					Stay Tuned follow us on
@@ -344,6 +347,8 @@
     <script src="smartWizard/js/jquery.smartWizard.min.js"></script>
 
 	<script src="slick/slick.js"></script>
+
+	<script src="assets/js/imageMapResizer.js"></script>
 
     <script src="assets/js/global.js"></script>
 

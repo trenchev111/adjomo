@@ -101,13 +101,82 @@ $(function(){
         centerMode: true,
         centerPadding: '20px',
         slidesToShow: 3,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true
+            }
+            },            
+            {
+            breakpoint: 620,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }        
+        ]
     })
-    
 
     // phone slider
     $('.phone-slider ul').slick({
         slidesToShow: 1,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 2000,
+        arrows: false
     })
+
+
+    var calculate_area = function(){
+        var area = $('area').attr('coords').split(',');
+        var area_top = parseInt(area[1]);
+        var area_left = parseInt(area[0]) + 18;
+
+        var areaWidth = parseInt(area[1]) + parseInt(area[3]);
+        var areaHeight_a = parseInt(area[0]) - parseInt(area[1]);
+        var areaHeight_b = parseInt(area[7]) - parseInt(area[6]);
+        var areaHeight = areaHeight_a + areaHeight_b;
+
+        $('.phone').css({
+            'top': area_top + 'px',
+            'margin-left': area_left + 'px',
+            'width': areaWidth + 'px',
+            'height': areaHeight + 'px'
+        });
+    }
+
+    calculate_area();
+
+    $(window).load(function(){
+        calculate_area();
+    });
+
+    $('map').imageMapResize();
+
+    // scroll to section
+    $('.menu ul li a').click(function(){
+        var link_attr = $(this).attr('section');
+        var this_a = $(this);
+        $('main section').each(function(){
+            var section_attr = $(this).attr('scroll');
+            $('.menu ul li a').removeClass('active');
+            this_a.addClass('active');
+            if(link_attr == section_attr){                
+                $('html,body').animate({
+                    scrollTop: $(this).offset().top
+                }, 600)
+            }
+        })
+    })
+
+
+    // scroll to section-2
+    $('.arrow-down').click(function(){
+        $('html,body').animate({
+            scrollTop: $('.section-2').offset().top
+        }, 600)
+    })
+
 })

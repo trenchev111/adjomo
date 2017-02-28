@@ -10,21 +10,30 @@
 .section-1 h1.title{
     color: #fff;
     padding-top: 20px;
+    font-weight: bold;
 }
-.section-1 img.hand{
-    max-width: 30%;
+.arrow-down{
+    cursor: pointer;
+}
+.section-1 .image-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: auto;
     position: absolute;
     left: 45%;
+    -webkit-transform: translate(-45%);
+    -ms-transform: translate(-45%);
+    -o-transform: translate(-45%);
     transform: translate(-45%);
 }
 .section-1 .phone{
+    position: absolute;
+    top: 0;
+    left: 0;
     overflow: hidden;
-    max-width: 210px;
-    margin: 0 auto;
-    position: relative;
-    left: -22px;
-    max-height: 380px;    
-    top: 120px;
 }
 .section-1 .phone li{
     min-height: 500px;
@@ -52,12 +61,14 @@
     border-radius: 50%;
     color: #fff;
 }
+.section-1 .phone .buttons .become-publisher{
+    width: 95%;
+}
 .section-1 .phone .buttons .become-publisher a{
     width: 100%;
     border-radius: 25px;
     background: #14d2ff;
-    /*padding: 10px 30px; */
-    padding: 10px 30px;
+    padding: 15px 30px;
     border: 1px solid #14d2ff;
 }
 .section-1 .phone .buttons .become-publisher a:focus,
@@ -448,4 +459,169 @@
 }
 .section-7 ul li a i {
     color: #999999;
+}
+
+#mapster_wrap_0{
+    margin: 0 auto;
+}
+
+/* ============= MEDIA QUERIES ============ */
+
+@media screen and (max-width: 1152px){
+    .section-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-1 h1.title{
+        position: relative;
+        top: -20vh;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .become-publisher{
+        max-width: 90%;
+        display: block;
+    }
+    .become-publisher a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+    .header.header .menu ul{
+        width: 20%;
+    }
+    .section-2 .monetize-content{
+        max-width: 40%;
+    }
+    .section-6 .slick-prev, .section-6 .slick-next{
+        top: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .section-5 .flex-center{
+        flex-direction: column;
+    }
+    *:after{
+        display: none;
+    }
+    .section-3 h1.platform{
+        padding-left: 0;
+    }
+     .header.header .menu ul{
+        width: 30%;
+    }
+    .section-2 .monetize-content{
+        max-width: 100%;
+    }
+    .section-2 h1.counter{
+        font-size: 60px;
+    }
+    .section-3{
+        background-size: 90%;
+    }
+    .absolute-right{
+        width: 40%;
+    }
+    .section-5 input.form-control::-webkit-input-placeholder,
+    .section-5 textarea.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 15px;
+    }
+    .section-5 input.form-control::-moz-placeholder,
+    .section-5 textarea.form-control::-moz-placeholder { /* Firefox 19+ */
+        font-size: 15px;
+    }
+    .section-5 input.form-control:-ms-input-placeholder,
+    .section-5 textarea.form-control:-ms-input-placeholder { /* IE 10+ */
+        font-size: 15px;
+    }
+    .section-5 input.form-control:-moz-placeholder,
+    .section-5 textarea.form-control:-moz-placeholder { /* Firefox 18- */
+        font-size: 15px;
+    }
+    .section-5 .send {
+        font-size: 16px;
+    }    
+}
+
+@media screen and (max-width: 520px){
+    .section-6 .slick-next, 
+    .section-6 .slick-next:hover{
+        right: -20px;
+    }
+    .section-6 .slick-prev, 
+    .section-6 .slick-prev:hover{
+        left: -20px;
+    }
+    .section-2 h1.monetize{
+        padding-right: 0;
+        padding-right: initial;
+        text-align: left;
+    }
+    .section-1 h1.title{
+        top: 10vh;
+    }
+    html,body{
+        overflow-x: hidden;
+    }
+    header.header .menu .sign-in{
+        padding: 5px 15px !important;
+    }
+    .section-2 h1.counter{
+        font-size: 40px;
+    }
+    .section-2 h1.counter span.number{
+        right: 0;
+        bottom: -10px;
+    }
+    .section-2 .monetize-content{
+        max-width: 100%;
+    }
+    .header.header .menu ul{
+        width: 50%;
+    }
+    .section-3{
+        background: none;
+    }
+    .section-4 .block p{
+        font-size: 14px;
+    }
+    .h1, h1{
+        font-size: 30px;
+    }
+    .section-5 .flex-center h2{
+        font-size: 22px;
+    }
+    .section-5 .dropdown button, .section-5 .dropdown button:focus, .section-5 .dropdown button:active, .section-5 .dropdown button:hover{
+        font-size: 20px;
+    }
+    .form-control{
+        font-size: 12px;
+    }
+    .section-7 > .col-md-12{
+        max-width: 80%;
+    }
+    .section-2, .section-4{
+        max-width: 100%;
+        padding: 0;
+    }
+    .section-5 > .col-md-12{
+        max-width: 100%;
+    }
+    .section-1 .image-phone{
+        position: relative;
+        left: auto;
+        transform: none;
+        top: 50px;
+    }
+    .section-3 > .col-md-12{
+        max-width: 60%;
+        float: left;
+    }
+    *:after{
+        display: none;
+    }
 }
